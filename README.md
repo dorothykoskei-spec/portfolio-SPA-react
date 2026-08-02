@@ -4,7 +4,6 @@
 This is a simple React app built with Vite.  
 It helps you add, search, and delete projects.
 
-# Deployed link
 
 ## Features
 - Add new projects
