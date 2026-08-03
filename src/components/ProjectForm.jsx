@@ -15,12 +15,12 @@ function ProjectForm({ onAdd }) {
       return;
     }
 
+
     // It creates a new project
     const newProject = {
       id: Date.now(), //It uses current time as a simple unique id
       title,
       description,
-      category
     };
     
     onAdd(newProject);
@@ -28,7 +28,6 @@ function ProjectForm({ onAdd }) {
     // It Clears form after submit
     setTitle("");
     setDescription("");
-    setCategory("");
   };
 
   return (
@@ -51,7 +50,7 @@ function ProjectForm({ onAdd }) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}//it again updates when the user type
       />
-      <button type="submit">Add</button>{/* Clicking this it triggers handleSubmit */}
+      <button  className="button" type="submit">Add</button>{/* Clicking this it triggers handleSubmit */}
     </form>
   );
 }
